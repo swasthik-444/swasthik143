@@ -39,9 +39,7 @@ app.post('/api/feedback', async (req, res) => {
         console.error("Error saving feedback:", error);
         res.status(500).json({ error: "Failed to save feedback" });
     }
-});
-
-// Start the server
+}); // Start the server
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
