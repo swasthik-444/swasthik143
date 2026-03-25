@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+    <h1>my portfolio</h1>
+    <img src="images/profile.jpg" alt="My Profile Photo" class="profile-pic">
+    <h1> SWASTHIK S </h1>
+</header>
+
+   <section id="certificates">
+    <h2>My Certificates</h2>
+    <div class="cert-grid">
+        <img src="images/cert1.jpg" alt="Certificate 1" class="cert">
+        <img src="images/cert2.jpg" alt="Certificate 2" class="cert">
+        <img src="images/cert3.jpg" alt="Certificate 3" class="cert">
+        <img src="images/cert4.jpg" alt="Certificate 4" class="cert">
+    </div>
+</section>
+
+   <section id="feedback">
+        <h2>Leave some Feedback</h2>
+        <form id="feedbackForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Feedback</button>
+        </form>
+        <p id="statusMessage"></p>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

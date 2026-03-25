@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    /* The requested blue-black gradient */
+    background: linear-gradient(to bottom right, #000000, #001a4d);
+    color: white;
+    text-align: center;
+    min-height: 100vh;
+}
+
+header { padding: 50px 20px; }
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #4da6ff;
+    object-fit: cover;
+}
+
+h2 { margin-top: 40px; color: #4da6ff; }
+
+.skill-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.skill {
+    background: rgba(77, 166, 255, 0.2);
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 1px solid #4da6ff;
+}
+
+.cert-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.cert {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 40px;
+    border-radius: 10px;
+    border: 1px solid #4da6ff;
+    width: 200px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 30px;
+    background-color: #4da6ff;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover { background-color: #3385ff; }
