@@ -2,7 +2,7 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     /* The requested blue-black gradient */
-    background: linear-gradient(to bottom right, #000000, #001a4d);
+    background: linear-gradient(to bottom right, #ccffcc, #66cc99);
     color: white;
     text-align: center;
     min-height: 100vh;
