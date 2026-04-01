@@ -1,26 +1,47 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    /* The requested blue-black gradient */
-     background: linear-gradient(to bottom right, #c12c9e, #001a4d);
+
+    /* Blue-black gradient background */
+    background: linear-gradient(135deg, #000814, #001d3d, #003566);
+
     color: white;
     text-align: center;
     min-height: 100vh;
 }
 
-header { padding: 50px 20px; }
+/* Header */
+header {
+    padding: 50px 20px;
+}
 
+/* Profile Image */
 .profile-pic {
     width: 150px;
     height: 150px;
     border-radius: 50%;
     border: 3px solid #4da6ff;
     object-fit: cover;
+    margin-top: 10px;
 }
 
-h2 { margin-top: 40px; color: #4da6ff; }
+/* Section Titles */
+h2 {
+    margin-top: 40px;
+    color: #4da6ff;
+}
 
-.skill-list {
+/* About Section */
+#about p {
+    max-width: 600px;
+    margin: 10px auto;
+    line-height: 1.6;
+    font-size: 16px;
+    opacity: 0.9;
+}
+
+/* Skills List (FIXED class name) */
+.skills-list {
     list-style: none;
     padding: 0;
     display: flex;
@@ -29,13 +50,23 @@ h2 { margin-top: 40px; color: #4da6ff; }
     flex-wrap: wrap;
 }
 
-.skill {
+/* Individual Skill */
+.skills-list li {
     background: rgba(77, 166, 255, 0.2);
     padding: 10px 20px;
     border-radius: 20px;
     border: 1px solid #4da6ff;
+    transition: 0.3s;
 }
 
+/* Hover effect for skills */
+.skills-list li:hover {
+    background: #4da6ff;
+    color: black;
+    transform: scale(1.05);
+}
+
+/* Certificates Grid */
 .cert-grid {
     display: flex;
     justify-content: center;
@@ -44,14 +75,21 @@ h2 { margin-top: 40px; color: #4da6ff; }
     flex-wrap: wrap;
 }
 
+/* Certificate Images */
 .cert {
-    background: rgba(255, 255, 255, 0.05);
-    padding: 40px;
+    width: 200px;
     border-radius: 10px;
     border: 1px solid #4da6ff;
-    width: 200px;
+    transition: 0.3s;
 }
 
+/* Hover effect for certificates */
+.cert:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #4da6ff;
+}
+
+/* Form Styling */
 form {
     display: flex;
     flex-direction: column;
@@ -62,14 +100,17 @@ form {
     margin: 0 auto;
 }
 
+/* Input Fields */
 input, textarea {
     width: 100%;
     padding: 10px;
     border-radius: 5px;
     border: none;
     box-sizing: border-box;
+    outline: none;
 }
 
+/* Button */
 button {
     padding: 10px 30px;
     background-color: #4da6ff;
@@ -81,4 +122,7 @@ button {
     transition: 0.3s;
 }
 
-button:hover { background-color: #3385ff; }
+/* Button Hover */
+button:hover {
+    background-color: #3385ff;
+}
