@@ -3,7 +3,8 @@ body {
     font-family: Arial, sans-serif;
 
     /* Blue-black gradient background */
-    background: linear-gradient(135deg, #000814, #001d3d, #003566);
+        background: linear-gradient(to bottom right, #c1c12c, #001a4d);
+
 
     color: white;
     text-align: center;
